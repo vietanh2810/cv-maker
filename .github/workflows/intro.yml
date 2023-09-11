@@ -1,14 +1,16 @@
-name: Hello World
+name: Install and Build
 
 on:
   push:
 
 jobs:
   build:
+    
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Show node version
         run: echo node -v
 
